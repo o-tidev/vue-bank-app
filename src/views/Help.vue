@@ -1,5 +1,5 @@
 <template>
-  <app-page back title="help">
+  <app-page back title="Help">
     <question-item
     v-for="question in questions"
     :key="question.title"
@@ -16,16 +16,16 @@ export default {
   setup() {
     const questions = [
       {
-        title: 'what is this system for?',
-        text: 'a demo banking system that will help track the requests'
+        title: 'What is this system for?',
+        text: 'A demo banking system that is created in order to track, create, and edit any incoming requests from banking customers.'
       },
       {
-        title: 'how do i authorise?',
-        text: 'you authorise via firebase, using the email /kottinov@gmail.com/ and the password /adminus/'
+        title: 'How do I authorise?',
+        text: 'The authorisation method is done through Firebase. In order to log in you use the kottinov@gmail.com email and adminus as a password'
       },
       {
-        title: 'what is involved in this project?',
-        text: 'project is created by using vue, vuex, vue router, firebase, vee-validate for form validation along with yup'
+        title: 'What is involved in this project?',
+        text: 'Project is created by using Vue CLI, Vuex for state managment, Vue Router for dynamic page routing, Firebase for authorisation and databases, Vee-Validate for form validation along with yup'
       }
     ]
 

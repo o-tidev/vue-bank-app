@@ -1,6 +1,6 @@
 <template>
     <div class="breadcrumbs" v-if="back">
-        <router-link to="/" class="text-white">return to requests list</router-link>
+        <router-link to="/" class="text-black">Return to requests list</router-link>
     </div>
   <div class="card">
     <h1 class="card-title">
@@ -31,6 +31,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.text-black {
+    color: black;
+}
 
 </style>

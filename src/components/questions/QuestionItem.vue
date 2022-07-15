@@ -18,6 +18,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.question-title {
+  margin-bottom: 10px;
+}
+
+.question-body {
+  line-height: 1.5;
+}
 
 </style>

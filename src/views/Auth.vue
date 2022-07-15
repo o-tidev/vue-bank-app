@@ -1,36 +1,32 @@
 <template>
   <form class="card" @submit.prevent="onSubmit">
-    <h1>vue bank</h1>
+    <h1 class="auth-header">Hello user, you need it log in.</h1>
 
     <!-- email validation  -->
     <div :class="['form-control', 't-margin', { invalid: eError }]">
-        <label for="email">email</label>
-        <input type="email" id="email" v-model="email" @blur="eBlur">
+        <input class="input-styling" type="email" id="email" v-model="email" @blur="eBlur" placeholder="Email">
         <!-- conditional error render -->
         <small v-if="eError" >{{ eError }}</small>
     </div>
 
     <!-- password validation  -->
     <div :class="['form-control', 't-margin', { invalid: pError }]">
-        <label for="password">password</label>
-        <input type="password" id="password" v-model="password" @blur="pBlur">
+        <input class="input-styling" type="password" id="password" v-model="password" @blur="pBlur" placeholder="Password">
         <!-- // conditional error render -->
         <small v-if="pError">{{ pError }}</small>
     </div>
 
 
-    <!-- gets disabled while async submitting
-    and is user is trying to log in without success several times  -->
+    <!-- gets disabled while async submitting in excess -->
     <button 
         class="btn primary" 
         type="submit" :disabled="isSubmitting || isOverAttempting ">
-        log in
+        Log in
     </button>
 
-    <!-- conditional rendering appears only when button user is 
-    over attempting to login -->
+    <!-- conditional rendering of the component appears only when button user is over attempting to login -->
     <span class="text-danger" v-if="isOverAttempting">
-        too many attemps, please try later
+        Too many attemps, please try later
     </span>
 
   </form>
@@ -66,6 +62,10 @@ export default {
     resize: none;
 }
 
+.input-styling {
+    padding: 20px !important;
+}
+
 .t-margin {
     margin-top: 30px;
 }
@@ -81,6 +81,11 @@ export default {
 }
 
 .card {
+    margin-top: 150px;
     border-radius: 0px;
+}
+
+.auth-header {
+    text-align: center;
 }
 </style>

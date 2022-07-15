@@ -1,5 +1,5 @@
 <template>
-<h4 v-if="requests.length === 0" class="text-center">no requests</h4>
+<h4 v-if="requests.length === 0" class="text-center">No requests</h4>
   <table v-else class="table">
     <thead>
         <tr>
@@ -12,10 +12,13 @@
         </tr>
     </thead>
     <tbody>
+        <!-- table rendering for the requests -->
         <tr v-for="(request, idx) in requests" :key="request.id">
+        <!-- rendering through requests arr -->
             <td> {{ idx + 1}} </td>
             <td> {{ request.fullname }} </td>
             <td> {{ request.phone }} </td>
+            <!-- translating the currency into EUR -->
             <td> {{ currency(request.amount) }}</td>
             <td> <app-status :type='request.status' /> </td>
             <td> 

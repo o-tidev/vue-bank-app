@@ -1,12 +1,4 @@
 # vue-practice-app
-## login
-```
-kottinov@gmail.com
-```
-## pass
-```
-password: adminus
-```
 
 ## Project setup
 ```
