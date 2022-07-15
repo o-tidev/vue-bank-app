@@ -1,4 +1,12 @@
 # vue-practice-app
+## Log in credentials
+```
+email: kottinov@gmail.com
+```
+```
+pass: adminus 
+
+
 
 ## Project setup
 ```
