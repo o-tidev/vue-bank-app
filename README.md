@@ -1,4 +1,10 @@
 # vue-practice-app
+
+## Showcase
+```
+https://fir-bank-2891c.web.app/auth
+```
+
 ## Log in credentials
 ```
 email: kottinov@gmail.com
